@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/actions/session.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">js/actions</a> session.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">3.85% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>1/26</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">3.85% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/26</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { browserHistory as history } from 'react-router';
+import { SESSION_LOAD, SESSION_LOGIN, SESSION_LOGOUT } from '../actions';
+import { deleteSession, postSession } from '../api/session';
+import { updateHeaders } from '../api/utils';
+&nbsp;
+const localStorage = window.localStorage;
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >initialize(</span>) {
+<span class="cstat-no" title="statement not covered" >  return <span class="fstat-no" title="function not covered" >(d</span>ispatch) =&gt; {</span>
+    const { email, name, token } = <span class="cstat-no" title="statement not covered" >localStorage;</span>
+<span class="cstat-no" title="statement not covered" >    if (email &amp;&amp; token) {</span>
+<span class="cstat-no" title="statement not covered" >      dispatch({</span>
+        type: SESSION_LOAD, payload: { email, name, token }
+      });
+    } else {
+<span class="cstat-no" title="statement not covered" >      history.push('/login');</span>
+    }
+  };
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >login(</span>email, password, targetPath) {
+<span class="cstat-no" title="statement not covered" >  return <span class="fstat-no" title="function not covered" >di</span>spatch =&gt; (</span>
+<span class="cstat-no" title="statement not covered" >    postSession(email, password)</span>
+      .then(<span class="fstat-no" title="function not covered" >(p</span>ayload) =&gt; {
+<span class="cstat-no" title="statement not covered" >        updateHeaders({ Auth: payload.token });</span>
+<span class="cstat-no" title="statement not covered" >        dispatch({ type: SESSION_LOGIN, payload });</span>
+<span class="cstat-no" title="statement not covered" >        try {</span>
+<span class="cstat-no" title="statement not covered" >          localStorage.email = payload.email;</span>
+<span class="cstat-no" title="statement not covered" >          localStorage.name = payload.name;</span>
+<span class="cstat-no" title="statement not covered" >          localStorage.token = payload.token;</span>
+        } catch (e) {
+<span class="cstat-no" title="statement not covered" >          alert(</span>
+            'Unable to preserve session, probably due to being in private ' +
+            'browsing mode.'
+          );
+        }
+<span class="cstat-no" title="statement not covered" >        history.push(targetPath);</span>
+      })
+      .catch(<span class="fstat-no" title="function not covered" >pa</span>yload =&gt; <span class="cstat-no" title="statement not covered" >dispatch({</span>
+        type: SESSION_LOGIN,
+        error: true,
+        payload: {
+          statusCode: payload.status, message: payload.statusText
+        }
+      }))
+  );
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >logout(</span>session) {
+<span class="cstat-no" title="statement not covered" >  return <span class="fstat-no" title="function not covered" >(d</span>ispatch) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    dispatch({ type: SESSION_LOGOUT });</span>
+<span class="cstat-no" title="statement not covered" >    deleteSession(session);</span>
+<span class="cstat-no" title="statement not covered" >    updateHeaders({ Auth: undefined });</span>
+<span class="cstat-no" title="statement not covered" >    try {</span>
+<span class="cstat-no" title="statement not covered" >      localStorage.removeItem('email');</span>
+<span class="cstat-no" title="statement not covered" >      localStorage.removeItem('name');</span>
+<span class="cstat-no" title="statement not covered" >      localStorage.removeItem('token');</span>
+    } catch (e) {
+      // ignore
+    }
+<span class="cstat-no" title="statement not covered" >    window.location.href = '/login'; </span>// reload fully
+  };
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Mar 14 2017 02:35:33 GMT-0600 (MDT)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
